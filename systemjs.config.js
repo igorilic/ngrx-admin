@@ -10,7 +10,10 @@
 
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    '@ngrx':                      'node_modules/@ngrx',
+    // 'ng2-material':               'node_modules/ng2-material',
+    // '@angular2-material':    'node_modules/@angular2-material'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -18,6 +21,13 @@
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    '@ngrx/core':                 { main: 'index.js', format: 'cjs'},
+    '@ngrx/store':                { main: 'index.js', format: 'cjs'},
+    // 'ng2-material':               { main: 'index.js', defaultExtension: 'js'},
+    // '@angular2-material/core':    { main: 'core.js', defaultExtension: 'js'},
+    // '@angular2-material/core/overlay': { main: 'overlay.js', defaultExtension: 'js'},
+    // '@angular2-material/checkbox': {main: 'checkbox.js', defaultExtension: 'js'},
+    // '@angular2-material/sidenav': { main: 'sidenav.js', defaultExtension: 'js'}
   };
 
   var ngPackageNames = [
