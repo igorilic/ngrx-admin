@@ -1,0 +1,4 @@
+<login *ngIf="!isRedirected"
+    (isLogin)="login($event)">
+</login>
+<dashboard [prikazi]="isRedirected"></dashboard>

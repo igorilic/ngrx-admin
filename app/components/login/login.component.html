@@ -1,0 +1,27 @@
+<div class="grid grid-fluid">
+    <div class="row">
+        <div class="col-4"></div>
+        <form class="col-4">
+            <div class="row">
+                <input class="form-input" 
+                       #username 
+                       type="text" 
+                       placeholder="Username">
+            </div>
+            <div class="row">
+                <input class="form-input"
+                       #password 
+                       type="password" 
+                       placeholder="Password">
+            </div>
+            <!--<div class="row alert alert-error" *ngIf="!loginForm.valid">
+                Username and Password are required!
+            </div>-->
+            <div>
+                <button class="btn-outline" (click)="onSubmit(username, password)">Submit</button>
+            </div>
+            
+        </form>
+        <div class="col-4"></div>
+    </div>
+</div>
